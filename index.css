@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.body{
+    background-color: white;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu{
+    /* height: 50%; */
+    /* width: 50vw; */
+    display:none ;
+}
+.desktop{
+    height: 50vh;
+    width: 58vw;
+}
+.bri{
+    font-size:42px ;
+    width: 75vw;
+}
+.dog{
+    display: flex;
+    gap: 20px;
+    width: 65%;
+    flex-direction: column;
+}
+.mat{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:15px ;
+    background-color: hsl(240, 100%, 5%) ;
+    color:white ;
+    justify-content: space-around;
+    width: 35%;
+}
+.me{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+}
+.cat{
+    display: flex;
+}
+button{
+    background-color: hsl(5, 85%, 63%) ;
+    padding:10px;
+    width: 250px;
+    height:70px ;
+    border: none;
+    font-size:20px ;
+    color:white ;
+    transition:2s ease-in-out ;
+}
+button:hover{
+    color:red ;
+    background-color: aqua;
+    transition:2s ease-in-out ;
+}
+.cat2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.cat2 p{
+    font-size:25px ;
+}.mat1{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    gap: 30px;
+}
+.p1{
+    padding-bottom: 30px;
+}
+.p2{
+    padding-bottom: 30px;
+}
+.mat1 h1{
+    font-size: 40px;
+    color: hsl(35, 77%, 62%) ;
+    align-items: flex-start;
+}
+.mat h4{
+    font-size:28px ;
+}
+.mat2{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px;
+    gap: 30px;
+}
+.mat3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.foot{
+    display: flex;
+    gap:20px;
+    padding:10px 50px;
+}
+footer img{
+    height:8vw ;
+}
+.down1{
+    display: flex;
+    gap: 10px;
+}
+.wet{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pet{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.down2{
+    display: flex;
+    gap: 10px;
+}
+.set{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.down3{
+    display: flex;
+    gap: 10px;
+}
+.foot h1 {
+    color:  hsl(236, 13%, 42%);
+}
+.foot p{
+    color:  hsl(236, 13%, 42%);
+}
+@media screen and (max-width: 950px) {
+    .main{
+    background-color: white;
+    width: 85%;
+    height: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    }
+   .navitems{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    background-color: aqua;
+    z-index: 9;
+    width: 30%;
+    align-items: center;
+    padding-top: 20%;
+    padding-bottom: 10px;
+    /* display: none; */
+    border-bottom-left-radius:30px ;
+    transition: right 1s ease-out;
+   } 
+   li:hover{
+    color: blue;
+    transition: 1.5s;
+   }
+   
+   nav{
+    width: 100%;
+    padding:10px;
+   }
+   .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   } 
+   .close{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+   }
+   .me{
+    flex-direction: column;
+    padding: 0;
+   }
+   .desktop{
+    height:25vh;
+    width: 100%;
+    padding: 10px;
+   }
+   .bri{
+    font-size:30px ;
+   }
+   .cat{
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+   }
+   .cat2 p{
+    font-size: 19px;
+   }
+   button{
+    background-color: hsl(5, 85%, 63%) ;
+    padding:10px;
+    width: 150px;
+    height:50px ;
+    border: none;
+    font-size:20px ;
+    color:white ;
+   }
+   .foot{
+    flex-direction: column;
+    padding: 10px;
+
+   }
+   .mat{
+    width: 100%;
+    padding: 10px;
+    align-items: flex-start;
+   }
+
+   .mat1{
+    padding: 10px;
+   }
+   .mat h4{
+    font-size:23px ;
+   }
+   .mat p{
+    font-size:19px ;
+   }
+
+   .dog{
+    width: 100%;
+   }
+   footer img{
+    height: 24vw;
+   }
+   .foot h1{
+    font-size:18px;
+
+   }
+   .foot h3{
+    font-size: 17px;
+   }
+   .foot p{
+    font-size:20px;
+   }
+   .pet{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+   }
+   .set{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+   }
+   .wet{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+   }
+}
